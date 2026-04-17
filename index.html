@@ -1,75 +1,231 @@
-Colle ce code dans ton fichier index.html :
-
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hostora Conciergerie</title>
-  <link rel="stylesheet" href="style.css">
+  <meta
+    name="description"
+    content="Hostora Conciergerie accompagne les propriétaires à Saint-Louis et dans les villes alentours dans la gestion de leurs locations courte durée."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
+  <header class="header">
     <div class="container nav">
-      <h1>Hostora Conciergerie</h1>
-      <a href="tel:0749241201" class="btn">Appeler</a>
+      <a href="#" class="brand">
+        <img src="logo.png" alt="Hostora Conciergerie" class="logo" />
+        <div>
+          <span class="brand-name">Hostora</span>
+          <span class="brand-sub">Conciergerie</span>
+        </div>
+      </a>
+
+      <nav class="menu">
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="tel:0749241201" class="btn btn-gold">Appeler</a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h2>Votre logement, géré avec sérieux</h2>
-      <p>
-        Hostora Conciergerie accompagne les propriétaires dans la gestion complète de leurs locations courte durée à Saint-Louis et dans les villes alentours.
-      </p>
-      <div class="buttons">
-        <a href="tel:0749241201" class="btn">Nous contacter</a>
-        <a href="mailto:hostora.conciergerie@gmail.com" class="btn-outline">Envoyer un email</a>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">Saint-Louis et villes alentours</p>
+        <h1>Votre logement, géré avec sérieux et élégance.</h1>
+        <p class="hero-description">
+          Hostora Conciergerie accompagne les propriétaires dans la gestion
+          complète de leurs locations courte durée : annonce, réservations,
+          accueil voyageurs, ménage, linge et suivi du logement.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="tel:0749241201" class="btn btn-gold">Nous contacter</a>
+          <a href="mailto:hostora.conciergerie@gmail.com" class="btn btn-light">Envoyer un email</a>
+        </div>
+
+        <div class="hero-badges">
+          <span>Aucun frais caché</span>
+          <span>Réponse rapide</span>
+          <span>Gestion complète</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="services">
-    <div class="container">
-      <h3>Nos services</h3>
-      <div class="cards">
-        <div class="card">Création d’annonce</div>
-        <div class="card">Gestion Airbnb et Booking</div>
-        <div class="card">Check-in et check-out</div>
-        <div class="card">Remise des clés</div>
-        <div class="card">Ménage</div>
-        <div class="card">Linge</div>
-        <div class="card">Assistance voyageurs</div>
-        <div class="card">Optimisation des prix</div>
-        <div class="card">Accompagnement administratif</div>
-        <div class="card">Conseils sur la réglementation</div>
+  <section class="intro">
+    <div class="container intro-grid">
+      <div class="intro-card">
+        <h2>Un service pensé pour les propriétaires</h2>
+        <p>
+          Nous prenons soin de votre logement comme si c’était le nôtre.
+          Notre objectif est de vous faire gagner du temps, simplifier la gestion
+          au quotidien et offrir une expérience de qualité à chaque voyageur.
+        </p>
+      </div>
+
+      <div class="intro-image">
+        <img
+          src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+          alt="Appartement moderne"
+        />
       </div>
     </div>
   </section>
 
-  <section class="about">
+  <section class="gallery">
     <div class="container">
-      <h3>Pourquoi choisir Hostora ?</h3>
-      <p>
-        Basé à Saint-Louis, Hostora propose un service sérieux, réactif et transparent pour aider les propriétaires à gagner du temps et optimiser leurs revenus.
-      </p>
+      <div class="section-title center">
+        <p class="eyebrow">Ambiance premium</p>
+        <h2>Des logements soignés, propres et accueillants</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img
+          src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80"
+          alt="Salon élégant"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+          alt="Chambre haut de gamme"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80"
+          alt="Cuisine moderne"
+        />
+      </div>
     </div>
   </section>
 
-  <section class="contact">
+  <section id="services" class="services">
     <div class="container">
-      <h3>Contact</h3>
-      <p>Téléphone : 07 49 24 12 01</p>
-      <p>Email : hostora.conciergerie@gmail.com</p>
-      <a href="tel:0749241201" class="btn">Appeler maintenant</a>
+      <div class="section-title">
+        <p class="eyebrow">Nos services</p>
+        <h2>Une gestion complète de votre location courte durée</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">Création d’annonce</div>
+        <div class="service-card">Gestion Airbnb, Booking et autres plateformes</div>
+        <div class="service-card">Check-in et check-out</div>
+        <div class="service-card">Remise des clés</div>
+        <div class="service-card">Ménage</div>
+        <div class="service-card">Linge</div>
+        <div class="service-card">Assistance voyageurs</div>
+        <div class="service-card">Optimisation des prix</div>
+        <div class="service-card">Accompagnement administratif</div>
+        <div class="service-card">Passage de longue durée à courte durée</div>
+        <div class="service-card">Conseils sur la réglementation</div>
+        <div class="service-card">Suivi sérieux du logement</div>
+      </div>
     </div>
   </section>
+
+  <section id="apropos" class="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+          alt="Appartement lumineux"
+        />
+      </div>
+
+      <div class="about-text">
+        <p class="eyebrow">Pourquoi choisir Hostora</p>
+        <h2>Une gestion locale, sérieuse et rassurante</h2>
+        <p>
+          Hostora Conciergerie accompagne les propriétaires à Saint-Louis et dans les
+          villes alentours avec une approche claire, réactive et professionnelle.
+        </p>
+
+        <ul class="check-list">
+          <li>Service local et disponible</li>
+          <li>Gestion complète de votre logement</li>
+          <li>Suivi clair et professionnel</li>
+          <li>Expérience soignée pour les voyageurs</li>
+          <li>Aide administrative et réglementaire</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-box">
+      <p class="eyebrow">Parlons de votre projet</p>
+      <h2>Vous souhaitez déléguer la gestion de votre logement ?</h2>
+      <p>
+        Contactez Hostora Conciergerie pour échanger sur vos besoins et découvrir
+        la solution la plus adaptée à votre bien.
+      </p>
+      <div class="hero-buttons">
+        <a href="tel:0749241201" class="btn btn-gold">Appeler maintenant</a>
+        <a href="mailto:hostora.conciergerie@gmail.com" class="btn btn-dark">Envoyer un email</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">Contact</p>
+        <h2>Hostora Conciergerie</h2>
+        <p>
+          Nous accompagnons les propriétaires à Saint-Louis et dans les villes alentours
+          dans la gestion de leurs locations courte durée.
+        </p>
+
+        <div class="contact-card">
+          <span class="contact-label">Téléphone</span>
+          <a href="tel:0749241201">07 49 24 12 01</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-label">Email</span>
+          <a href="mailto:hostora.conciergerie@gmail.com">hostora.conciergerie@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-form-box">
+        <h3>Nous contacter</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Votre nom" />
+          <input type="text" placeholder="Votre téléphone" />
+          <input type="email" placeholder="Votre email" />
+          <textarea placeholder="Décrivez votre logement ou votre besoin"></textarea>
+          <button type="button" class="btn btn-gold full">Envoyer la demande</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Hostora Conciergerie</strong>
+        <p>Saint-Louis et villes alentours</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="tel:0749241201">07 49 24 12 01</a>
+        <a href="mailto:hostora.conciergerie@gmail.com">hostora.conciergerie@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:0749241201" class="floating-call">Appeler</a>
 
 </body>
 </html>
-```
-
-Ensuite crée un deuxième fichier nommé style.css.
 

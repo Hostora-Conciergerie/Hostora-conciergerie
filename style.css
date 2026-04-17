@@ -1,1 +1,135 @@
+```css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f6f2;
+  color: #2b2b2b;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #f8f6f2, #e9dfd2);
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #c9a35f;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.btn-outline {
+  display: inline-block;
+  border: 2px solid #c9a35f;
+  color: #c9a35f;
+  padding: 12px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.services {
+  padding: 80px 0;
+}
+
+.services h3,
+.about h3,
+.contact h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.about {
+  background: #2b2b2b;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+```
 
